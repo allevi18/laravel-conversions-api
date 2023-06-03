@@ -8,12 +8,12 @@ use Illuminate\Support\Collection;
 
 class EventCollection extends Collection
 {
-    public function filterFacebookPixelEvents(): static
+    public function filterFacebookPixelEvents()
     {
         return $this->filter(fn ($event) => $event instanceof MapsToFacebookPixel);
     }
 
-    public function filterDataLayerEvents(): static
+    public function filterDataLayerEvents()
     {
         return $this->filter(fn ($event) => $event instanceof MapsToDataLayer);
     }

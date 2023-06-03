@@ -12,8 +12,8 @@ use GuzzleHttp\Promise\PromiseInterface;
 
 class ConversionsApi
 {
-    protected EventCollection $events;
-    protected UserData $userData;
+    protected $events;
+    protected $userData;
 
     public function __construct()
     {
